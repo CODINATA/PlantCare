@@ -8,7 +8,7 @@ The machine learning code used in this project is based on the work done by @Man
 
 ## Installation
 to install the requirements run this command on your terminal : pip install -r requirements.txt
-Download the pre-trained model file plant_disease_model_1.pt from [here] https://drive.google.com/drive/folders/1ewJWAiduGuld_9oGSrTuLumg9y62qS6A
+Download the pre-trained model file plant_disease_model_1.pt from [here]https://drive.google.com/drive/folders/1ewJWAiduGuld_9oGSrTuLumg9y62qS6A
 
 Add the downloaded.
 
