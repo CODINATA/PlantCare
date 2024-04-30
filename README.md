@@ -28,5 +28,18 @@ Run the Flask app using below command : python app.py.
  # Home Page
 ![home_page](https://github.com/CODINATA/PlantCare/assets/115686926/196f9e45-2267-4e7c-afbd-64fcfebda25e)
 
-# login
+# Login
 ![login](https://github.com/CODINATA/PlantCare/assets/115686926/1346b9c4-17a2-474f-8642-d3210ac471be)
+
+# Signup
+![signup](https://github.com/CODINATA/PlantCare/assets/115686926/e4d11880-2e38-4e2e-ab11-01b6f082e5ef)
+
+# Profile
+![profile](https://github.com/CODINATA/PlantCare/assets/115686926/ba90f9cb-1086-4fb2-88dc-8a2912506e8d)
+
+# Profile Infos
+![profile_infos](https://github.com/CODINATA/PlantCare/assets/115686926/8719ff38-05a8-4aca-982f-57ffe714e8f5)
+
+# ML Model
+![ml_model](https://github.com/CODINATA/PlantCare/assets/115686926/c797d33e-9977-4411-ab0d-69da1fe065a4)
+
