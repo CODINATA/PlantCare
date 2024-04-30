@@ -13,3 +13,5 @@ Download the pre-trained model file plant_disease_model_1.pt from [here](https:/
 Add the downloaded.
 
 Run the Flask app using below command : python app.py.
+## Home Page
+![home_page](https://github.com/CODINATA/PlantCare/assets/115686926/196f9e45-2267-4e7c-afbd-64fcfebda25e)
