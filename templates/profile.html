@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Infos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/profile.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.svg') }}" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <header>
+            <h1 class="brand">Plantcare</h1>
+            <ul>
+                <li class="active"><a href="#">Profile</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </header>
+    </nav>
+
+    <main>
+        <section class="profile-info">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+            <div>
+                <h3>John Doe</h3>
+                <p>Plant enthusiast</p>
+                <button class="edit-profile-button">Edit Profile</button>
+            </div>
+        </section>
+
+        <section class="achievements">
+            <h2 class="button" id="achievements-button">Achievements</h2>
+            <div class="achievement">
+                <img src="achievement1.png" alt="Achievement 1">
+                <p>Green Thumb</p>
+            </div>
+            <div class="achievement">
+                <img src="achievement2.png" alt="Achievement 2">
+                <p>Master Waterer</p>
+            </div>
+        </section>
+
+        <section class="activity-feed">
+            <h2 class="button" id="activity-feed-button">Activity Feed</h2>
+            <div class="activity-item">
+                <p>Watered the plants</p>
+                <span class="activity-time">2 hours ago</span>
+            </div>
+            <div class="activity-item">
+                <p>Added a new plant</p>
+                <span class="activity-time">1 day ago</span>
+            </div>
+        </section>
+
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>This is the About Me Section. Edit with EDIT PROFILE button</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com">Facebook</a>
+                <a href="https://www.twitter.com">Twitter</a>
+                <a href="https://www.instagram.com">Instagram</a>
+            </div>
+        </section>
+    </main>
+    <aside class="sidebar">
+        <section class="plant-care-journal">
+            <h2>Plant Care Journal</h2>
+            <form id="journal-form">
+                <label for="plant-name">Plant Name:</label>
+                <input type="text" id="plant-name" name="plant-name" required>
+                <label for="activity">Activity:</label>
+                <textarea id="activity" name="activity" rows="4" required></textarea>
+                <button type="submit">Add Entry</button>
+            </form>
+            <div id="journal-entries">
+            </div>
+        </section>
+    </aside>
+
+</body>
+
+</html>
