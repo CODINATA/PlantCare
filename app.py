@@ -187,14 +187,9 @@ def contact():
         if result:
             id = result['user_id']
         else:
-            cur.execute("INSERT INTO users_signup (Email) VALUES (%s)", (email,))
+            cur.execute("INSERT INTO ContactFormSubmissions (UserID, Email, Message) VALUES (%s, %s, %s)", (id, email, message))
             mysql.connection.commit()
-            id = cur.lastrowid
-
-        cur.execute("INSERT INTO ContactFormSubmissions (UserID, Email, Message) VALUES (%s, %s, %s)", (id, email, message))
-        mysql.connection.commit()
-        cur.close()
-
+            cur.close()
         return redirect(url_for('contact'))
 
     return render_template('contact.html')
