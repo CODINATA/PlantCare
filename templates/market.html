@@ -1,17 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/sidebar.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.svg') }}" type="image/x-icon">
+    
 </head>
+
+
 <body>
+
+
+
+
     <div class="wrapper">
         <aside id="sidebar">
             <div class="d-flex">
@@ -64,39 +74,37 @@
                 </a>
             </div>
         </aside>
-    
+        <div class="main p-3">
 
-<br>
+           
 
-<div class="row p-3">
-    {% for index in range(0,supplement_name | length) %}
-    {% if index != 4 %}
-    <div class="col">
-        <div class=" p-5 bg-white shadow rounded-lg" style="height: 95%;">
-        <center>
-            {% if index==3 or index==5 or index==7 or index==11 or index==15 or index==18 or index==20 or
-            index==23 or
-            index==24 or index==25 or index==28 or index==38 %}
-            <h5>Fertilizer<b style="color: green;"> (Healthy):</b></h5>
-            {% else %}
-            <h5>Supplements<b style="color: red;"> (Diseased):</b></h5>
-            {% endif %}
-            <br>
-            <img src={{supplement_image[index]}} width="200" height="250">
-            <br>
-            <br>
-            <h6>For {{disease[index]}}</h6>
-            <p>{{supplement_name[index]}}</p>
 
-            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
-                    style="background-color: #05380b;">Buy Product</button></a>
-        </center>
-    </div>
-</div>
-{% endif %}
-{% endfor %}
-</div>
+            <form action="/submit" method="POST" enctype="multipart/form-data">
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                    <input type="file" name="image" class="drop-zone__input">
+                </div>
+                <a href="{{ url_for('submit') }}">
+                    <button type="submit" class="btn btn-success" data-mdb-ripple-init>Detect Disease</button>
+                </a>
+                
+            </form>
 
-    
-</body>
-</html>
+
+        </div>
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        </body>
+    </html>
+
+
+
