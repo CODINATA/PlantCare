@@ -173,5 +173,33 @@ def logout():
 def profile():
     return render_template('profile.html')
 
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        message = request.form.get('message')
+
+        cur = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+        cur.execute("SELECT user_id FROM users_signup WHERE email = %s", (email,))
+        result = cur.fetchone()
+
+        if result:
+            id = result['user_id']
+        else:
+            cur.execute("INSERT INTO users_signup (Email) VALUES (%s)", (email,))
+            mysql.connection.commit()
+            id = cur.lastrowid
+
+        cur.execute("INSERT INTO ContactFormSubmissions (UserID, Email, Message) VALUES (%s, %s, %s)", (id, email, message))
+        mysql.connection.commit()
+        cur.close()
+
+        return redirect(url_for('contact'))
+
+    return render_template('contact.html')
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
