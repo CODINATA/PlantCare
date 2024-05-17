@@ -1,6 +1,8 @@
-![home](https://github.com/CODINATA/PlantCare/assets/115686926/f6b1737e-6121-4709-8a8b-19fa655fb763)# PlantCare
+# PlantCare
+![home](https://github.com/CODINATA/PlantCare/assets/115686926/f6b1737e-6121-4709-8a8b-19fa655fb763)
 
-## Description
+
+# Description
 PlantCare is a machine learning model that detects diseases in plant leaves. It can be a valuable tool for farmers, gardeners, and anyone interested in plant health.
 
 ## Original Code
