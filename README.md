@@ -1,4 +1,4 @@
-# PlantCare
+![home](https://github.com/CODINATA/PlantCare/assets/115686926/f6b1737e-6121-4709-8a8b-19fa655fb763)# PlantCare
 
 ## Description
 PlantCare is a machine learning model that detects diseases in plant leaves. It can be a valuable tool for farmers, gardeners, and anyone interested in plant health.
@@ -26,20 +26,31 @@ Run the Flask app using below command : python app.py.
 
 </svg>![logo](https://github.com/CODINATA/PlantCare/assets/115686926/3c06e9dc-6650-4911-8aa9-ffa3b6638a72)
  # Home Page
-![home_page](https://github.com/CODINATA/PlantCare/assets/115686926/196f9e45-2267-4e7c-afbd-64fcfebda25e)
+![home](https://github.com/CODINATA/PlantCare/assets/115686926/cae83ec9-3637-481a-a100-e3a5af8afa7e)
 
 # Login
-![login](https://github.com/CODINATA/PlantCare/assets/115686926/1346b9c4-17a2-474f-8642-d3210ac471be)
+![login](https://github.com/CODINATA/PlantCare/assets/115686926/f244a740-7b18-44f7-950e-5b6f95857eab)
+
 
 # Signup
-![signup](https://github.com/CODINATA/PlantCare/assets/115686926/e4d11880-2e38-4e2e-ab11-01b6f082e5ef)
+![signup](https://github.com/CODINATA/PlantCare/assets/115686926/e3732ac7-6467-422d-9714-39c0f12791fc)
+
 
 # Profile
-![profile](https://github.com/CODINATA/PlantCare/assets/115686926/ba90f9cb-1086-4fb2-88dc-8a2912506e8d)
+
+![main](https://github.com/CODINATA/PlantCare/assets/115686926/4f6b66ad-ec9d-4375-8ac4-a9e81233ed60)
+
 
 # Profile Infos
-![profile_infos](https://github.com/CODINATA/PlantCare/assets/115686926/8719ff38-05a8-4aca-982f-57ffe714e8f5)
+![profile](https://github.com/CODINATA/PlantCare/assets/115686926/7e49bd1c-a3fc-4bd0-86aa-f3e04c0c2a6e)
+
+# Market
+![market](https://github.com/CODINATA/PlantCare/assets/115686926/918e6f2e-28e0-47d5-a562-f8fec90b40da)
+
+# Contact Us
+![contact_us](https://github.com/CODINATA/PlantCare/assets/115686926/b88fa588-9901-47ae-96d4-399112fc413e)
+
 
 # ML Model
-![ml_model](https://github.com/CODINATA/PlantCare/assets/115686926/c797d33e-9977-4411-ab0d-69da1fe065a4)
 
+![ml_model](https://github.com/CODINATA/PlantCare/assets/115686926/92bb8617-4c36-4a1a-8c31-7b5ad4274efb)
